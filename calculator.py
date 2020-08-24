@@ -14,11 +14,20 @@ def HDL_driver():
     # Get input
     entered_HDL = get_input()
     # Check if HDL is normal
+    compared_result = check_HDL(entered_HDL)
     # Output
 
 def get_input():
     userHDL = input("Please enter your HDL: ")
     return int(userHDL)
+
+def check_HDL(entered_HDL):
+    if entered_HDL >= 60:
+        return "Normal"
+    elif entered_HDL < 60 & entered_HDL >= 40:
+        return "Borderline Low"
+    else:
+        return "Low"
 
 
 
