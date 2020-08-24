@@ -24,12 +24,10 @@ def get_input():
 def check_HDL(entered_HDL):
     if entered_HDL >= 60:
         return "Normal"
-    elif entered_HDL < 60 & entered_HDL >= 40:
+    elif 40 <= entered_HDL < 60:
         return "Borderline Low"
     else:
         return "Low"
-
-
 
 interface()
 
