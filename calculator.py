@@ -35,6 +35,6 @@ def give_output(entered_HDL, compared_result):
     print("Comparing to the standards, your HDL is {}".format(compared_result))
     return
 
-
-interface()
+if __name__ == "__main__":
+    interface()
 
